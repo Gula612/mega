@@ -25,11 +25,11 @@ $content = "
                 <h6 class=\"card-title text-secondary\" style=\"font-size: 18pt; margin: 10px; padding: 1px;\">$price руб.</h6>
                 <div class=\"card-buy\">
                    <div class=\"btn btn-white border rounded-0  border-secondary text-dark\" style=\"width: 140px; height: 34px; margin: 5px;  padding: 0;\">
-                     <div class=\"btn btn-white\" style=\"font-size: 20pt; width: 50px; height: 30px; margin: 1px; padding: 1px;\"><sup><b>-</b></sup></div>
-                     <div class=\"btn btn-none\" style=\"font-size: 14pt; width: 20px; height: 30px; margin: 1px; padding: 1px;\">1</div>
-                     <div class=\"btn btn-white\" style=\"font-size: 20pt; width: 50px; height: 30px; margin: 1px; padding: 1px;\"><sup><b>+</b></sup></div>
+                   <button class=\"minus btn btn-white\" style=\"font-size: 20pt; width: 50px; height: 30px; margin: 1px; padding: 1px;\"><sup><b>-</b></sup></button>
+                   <div class=\"btn btn-none\" style=\"font-size: 14pt; width: 20px; height: 30px; margin: 1px; padding: 1px;\"><span class=\"counter\">1</span></div>
+                   <button class=\"plus btn btn-white\" style=\"font-size: 20pt; width: 50px; height: 30px; margin: 1px; padding: 1px;\"><sup><b>+</b></sup></button>
                    </div>
-                   <a class=\"btn btn-secondary border rounded-0  border-secondary text-white\" style=\"width: 140px; height: 35px; margin: 5px;\" href=\"/mega/basket/add/$product->id\">В КОРЗИНУ</a>
+                   <button class=\"addButton btn btn-secondary border rounded-0  border-secondary text-white\" style=\"width: 140px; height: 35px; margin: 5px;\" productId=\"$product->id\">В КОРЗИНУ</button>
                 </div> 
                 
   "; 
@@ -73,7 +73,34 @@ $content .= "
         </div>
       </div>
       <div class=\"col-md-12 row bg-white\" style=\"height: 20px\"></div>
+      
+      
+      
+    <!-- всплывающее окно -->  
+      
+    
+      <div class=\"b-popup\" id=\"popup1\">
+        <div class=\"b-popup-content text-center position-relative\" style=\"padding: 1px;\">
+          <div class=\"card container border rounded-0 border-white\" style=\"padding: 0%;\">
+            <div class=\"btn border border-secondary\" style=\"padding: 10px; padding-bottom: 10px;\">
+              <div class=\"card-body\" style=\"padding: 1px; margin-bottom: 1px;\">
+                <h5 class=\"font-weight-light\" >ТОВАР</h5>
+                <h5 class=\"card-title\" style=\"height: 90px; padding:1px;\">$product->name</h5>
+                <h5 class=\"font-weight-light\">добавлен в корзину</h5>
+              </div>
+              <div class=\"card-buy\">
+                 <a class=\"btn btn-white border rounded-0 border-dark text-dark\" style=\"width: 250px; margin-bottom: 5px;\" href=\"http://gula612.beget.tech/mega/basket\">ПЕРЕЙТИ В КОРЗИНУ</a>
+                 <a class=\"btn btn-dark border rounded-0 border-dark text-white\" style=\"width: 250px;\" href=\"javascript:PopUpHide()\">ПРОДОЛЖИТЬ ПОКУПКИ</a>
+              </div>
+            </div>
+          </div> 
+        </div>              
+      </div>
+   
   
 "; 
 
-$scripts = "";
+$scripts = "
+ <script src=\"http://gula612.beget.tech/mega/resource/js/addToBasket.js\"></script>
+ <script src=\"http://code.jquery.com/jquery-2.0.2.min.js\"></script>
+";

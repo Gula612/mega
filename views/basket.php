@@ -42,9 +42,9 @@ for($i = 0; $i < count($products); $i++) {
               </div>   
               <div class=\"card-count\" style=\"margin: 30px;\">
                  <div class=\"btn btn-white border rounded-0  border-secondary text-dark\" style=\"width: 140px; height: 34px; margin: 5px;  padding: 0;\">
-                   <div class=\"btn btn-white\" style=\"font-size: 20pt; width: 50px; height: 30px; margin: 1px; padding: 1px;\"><sup><b>-</b></sup></div>
-                   <div class=\"btn btn-none\" style=\"font-size: 14pt; width: 20px; height: 30px; margin: 1px; padding: 1px;\">1</div>
-                   <div class=\"btn btn-white\" style=\"font-size: 20pt; width: 50px; height: 30px; margin: 1px; padding: 1px;\"><sup><b>+</b></sup></div>
+                   <button class=\"minus btn btn-white\" style=\"font-size: 20pt; width: 50px; height: 30px; margin: 1px; padding: 1px;\"><sup><b>-</b></sup></button>
+                   <div class=\"btn btn-none\" style=\"font-size: 14pt; width: 20px; height: 30px; margin: 1px; padding: 1px;\"><span class=\"counter\">1</span></div>
+                   <button class=\"plus btn btn-white\" style=\"font-size: 20pt; width: 50px; height: 30px; margin: 1px; padding: 1px;\"><sup><b>+</b></sup></button>
                  </div>
               </div>
               <h6 class=\"card-title text-secondary\" style=\"font-size: 18pt; margin: 35px 0px; padding:  1px;\">$price руб.</h6>
@@ -74,4 +74,4 @@ $content .= "
 
 "; // это </div> от .row  и от  .container
 
-$scripts = ""; // оставляем пустым, просто, чтоб не ругалась, что переменная не объявлена
+$scripts = "<script src=\"/mega/resource/js/addBasket.js\"></script>"; // оставляем пустым, просто, чтоб не ругалась, что переменная не объявлена

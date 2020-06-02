@@ -1,5 +1,5 @@
 <?
-$title = "NATUREZA";
+$title = "ПРОБНЫЕ НАБОРЫ";
   
 $style = ""; 
 
@@ -7,11 +7,11 @@ $content = "
   <div class=\"\">
         <div class=\"content right\">
           <div class=\"breadcrumb\"> 
-            <a class=\"text-dark\" href=\"/mega\">Магазин</a> / <a title=\"NATUREZA\" class=\"text-dark\" href=\"/mega/NATUREZA\">NATUREZA</a> 
+            <a class=\"text-dark\" href=\"/mega\">Магазин</a> / <a title=\"ПРОБНЫЕ НАБОРЫ\" class=\"text-dark\" href=\"/mega/prob\">ПРОБНЫЕ НАБОРЫ</a> 
           </div>
           <div class=\"row wrapper\" style=\"margin: 20px;\">
             <div class=\"bg-white\" style=\"height: 10px\"></div>
-            <h2 class=\"col-md-12 box-title\" align=\"center\">NATUREZA</h2>
+            <h2 class=\"col-md-12 box-title\" align=\"center\">ПРОБНЫЕ НАБОРЫ</h2>
             <div class=\"col-md-12 bg-white\" style=\"height: 10px\"></div>
               
            <!-- 3 карточки были как пример - 2 лишние убрали потом -->
@@ -20,7 +20,7 @@ $content = "
 //  \" - экранирование, чтоб они не конфликтовали с главными ""
 // тут разорвали, чтоб сюда вставить карточки
 foreach($products as $product) {
-  if(($product->id_brand) == 'NATUREZA') {
+  if(($product->id_prob) == 1) {
     $price = number_format($product->price, 2, ',', '.');
   $content .= "
 
@@ -34,6 +34,7 @@ foreach($products as $product) {
   "; 
 // тут разорвали, чтоб сюда вставить формулу показа старой цены
 if(($product->old_price) == 0) {
+  
   $content .= "        
           
                       <h6 class=\"card-title text-white\" style=\"opacity: 0.7; margin-bottom: 1px; padding: 1px;\">0</h6>

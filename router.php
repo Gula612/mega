@@ -52,6 +52,12 @@ if(!isset($path[2]) or $path[2] == "") {
    $controllers->prob();
    exit();
    
+} elseif($path[2] == "special" && !isset($path[3])) {   // скидки
+   require_once('../mega/controllers/ProductController.php'); 
+   $controllers = new ProductController();
+   $controllers->special();
+   exit();
+   
 } elseif($path[2] == "keratin" && !isset($path[3])) {
    require_once('../mega/controllers/ProductController.php'); 
    $controllers = new ProductController();

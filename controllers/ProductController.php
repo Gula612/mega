@@ -29,6 +29,13 @@ class ProductController {
     require_once('../mega/views/template.php'); // сборка всех файлов показов
   }
   
+  public function special() {
+    require_once('../mega/models/Product.php');
+    $products = Product::getAll();
+    require_once('../mega/views/special.php');
+    require_once('../mega/views/template.php'); // сборка всех файлов показов
+  }
+  
   public function keratin() {
     require_once('../mega/models/Product.php');
     $products = Product::getAll();

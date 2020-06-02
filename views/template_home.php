@@ -161,8 +161,8 @@
             <a class="btn btn-dark text-uppercase dropdown-item border rounded-0 border-white" style="font-size: 1.2rem; background: #DCDCDC; padding: 9px;" href="/mega/prob">ПРОБНЫЕ НАБОРЫ</a>
             <a class="btn btn-dark text-uppercase dropdown-item border rounded-0 border-white" style="font-size: 1.2rem; background: #DCDCDC; padding: 9px;" href="/mega/special">СПЕЦПРЕДЛОЖЕНИЯ</a>
             <a class="btn btn-dark text-uppercase dropdown-item border rounded-0 border-white" style="font-size: 1.2rem; background: #DCDCDC; padding: 9px;" href="/mega/keratin">КЕРАТИН</a>
-            <a class="btn btn-dark text-uppercase dropdown-item border rounded-0 border-white" style="font-size: 1.2rem; background: #DCDCDC; padding: 9px;" href="/mega/botoks">БОТОКС ДЛЯ ВОЛОС</a>
-            <a class="btn btn-dark text-uppercase dropdown-item border rounded-0 border-white" style="font-size: 1.2rem; background: #DCDCDC; padding: 9px;" href="/mega/nanoplastika">НАНОПЛАСТИКА</a>
+            <a class="btn btn-dark text-uppercase dropdown-item border rounded-0 border-white" style="font-size: 1.2rem; background: #DCDCDC; padding: 9px;" href="/mega/botox">БОТОКС ДЛЯ ВОЛОС</a>
+            <a class="btn btn-dark text-uppercase dropdown-item border rounded-0 border-white" style="font-size: 1.2rem; background: #DCDCDC; padding: 9px;" href="/mega/nanoplastics">НАНОПЛАСТИКА</a>
             <a class="btn btn-dark text-uppercase dropdown-item border rounded-0 border-white" style="font-size: 1.2rem; background: #DCDCDC; padding: 9px;" href="#">ШГО 1 ЭТАП</a>
             <a class="btn btn-dark text-uppercase dropdown-item border rounded-0 border-white" style="font-size: 1.2rem; background: #DCDCDC; padding: 9px;" href="#">МАСКИ 3 ЭТАП</a>
             <a class="btn btn-dark text-uppercase dropdown-item border rounded-0 border-white" style="font-size: 1.2rem; background: #DCDCDC; padding: 9px;" href="#">ИНСТРУМЕНТЫ</a>
@@ -190,7 +190,7 @@
             <div class="row col-clear shop-small-list border rounded-0 border-white" style="margin-left: 0.1rem; height: 90px; font-size: 0.9rem; background: #DCDCDC;">
               <div class="col-3"> <img title="Ботокс для волос NATUREZA NTOX Massa (для всех типов волос) 1000 ml" width="" height="70" alt="" src="/mega/resource/img/products/Ntox1000.jpg"></div>
               <div class="col">
-                <div> <a title=" Ботокс для волос NATUREZA NTOX Massa 1000 ml - Ботокс для волос NATUREZA NTOX Massa (для всех типов волос) 1000 ml" class="stip text-dark" href="">Ботокс для волос NATUREZA NTOX Massa 1000 ml</a> </div> 
+                <div> <a title=" Ботокс для волос NATUREZA NTOX Massa 1000 ml - Ботокс для волос NATUREZA NTOX Massa (для всех типов волос) 1000 ml" class="stip text-dark" href="http://gula612.beget.tech/mega/shop/4">Ботокс для волос NATUREZA NTOX Massa 1000 ml</a> </div> 
                 <div class="text-bold"><b>5.000,00 руб.</b><span class="sup">* <s>5.500,00 руб.</s></span></div>
               </div>
             </div>
@@ -198,7 +198,7 @@
             <div class="row col-clear shop-small-list border rounded-0 border-white" style="margin-left: 0.1rem; height: 90px; font-size: 0.9rem; background: #DCDCDC;">
               <div class="col-3"> <img title="Нанопластика VOGUE Orghanlux 1000 ml"  width="" height="70" alt="" src="/mega/resource/img/products/Vogue1000.jpg"> </div>
               <div class="col"> 
-                <div> <a title=" Нанопластика VOGUE Orghanlux 1000 ml - Нанопластика VOGUE Orghanlux 1000 ml" class="stip text-dark" href="">Нанопластика VOGUE Orghanlux 1000 ml</a> </div> 
+                <div> <a title=" Нанопластика VOGUE Orghanlux 1000 ml - Нанопластика VOGUE Orghanlux 1000 ml" class="stip text-dark" href="http://gula612.beget.tech/mega/shop/8">Нанопластика VOGUE Orghanlux 1000 ml</a> </div> 
                 <div class="text-bold"><b>6.000,00 руб.</b><span class="">* <s>8.500,00 руб.</s></span></div>
               </div>
             </div>
@@ -206,7 +206,7 @@
             <div class="row col-clear shop-small-list border rounded-0 border-white" style="margin-left: 0.1rem; height: 90px; font-size: 0.9rem; background: #DCDCDC;">
               <div class="col-3"> <img title="Ботокс для волос ZOOM BTX Diamond 1000 ml" width="" height="70" alt="" src="/mega/resource/img/products/b_zoom_1000.jpg"> </div>
               <div class="col">
-                <div> <a title=" Ботокс для волос ZOOM BTX Diamond 1000 ml - Ботокс для волос ZOOM BTX Diamond 1000 ml" class="stip text-dark" href=""> Ботокс для волос ZOOM BTX Diamond 1000 ml</a> </div>
+                <div> <a title=" Ботокс для волос ZOOM BTX Diamond 1000 ml - Ботокс для волос ZOOM BTX Diamond 1000 ml" class="stip text-dark" href="http://gula612.beget.tech/mega/shop/1"> Ботокс для волос ZOOM BTX Diamond 1000 ml</a> </div>
                 <div class="text-dark"><b>8.500,00 руб.</b><span class="sup">* <s></s></span></div>
               </div>
             </div>

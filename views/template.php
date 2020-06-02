@@ -27,6 +27,24 @@
   /*  min-width: 800px; /* Минимальная ширина */
   /*  max-width: 1200px; /* Максимальная ширина */
   /* } */
+  .b-popup{
+    display: none;
+    width:100%;
+    min-height:100%;
+    background-color: rgba(0,0,0,0.5);
+    overflow:hidden;
+    position:fixed;
+    top:0px;
+  }
+  .b-popup .b-popup-content{
+    margin:180px auto 0px auto;
+    width:300px;
+    padding:10px;
+    background-color: #FFF;
+    border-radius:0px;
+    box-shadow: 0px 0px 10px #000;
+  }
+  
    .sidebar { /* Левая колонка главной части */
     width: 84mm; /* Ширина левой колонки */
     margin-left: 0;
@@ -161,8 +179,8 @@
             <a class="btn btn-dark text-uppercase dropdown-item border rounded-0 border-white" style="font-size: 1.2rem; background: #DCDCDC; padding: 9px;" href="/mega/prob">ПРОБНЫЕ НАБОРЫ</a>
             <a class="btn btn-dark text-uppercase dropdown-item border rounded-0 border-white" style="font-size: 1.2rem; background: #DCDCDC; padding: 9px;" href="/mega/special">СПЕЦПРЕДЛОЖЕНИЯ</a>
             <a class="btn btn-dark text-uppercase dropdown-item border rounded-0 border-white" style="font-size: 1.2rem; background: #DCDCDC; padding: 9px;" href="/mega/keratin">КЕРАТИН</a>
-            <a class="btn btn-dark text-uppercase dropdown-item border rounded-0 border-white" style="font-size: 1.2rem; background: #DCDCDC; padding: 9px;" href="/mega/botoks">БОТОКС ДЛЯ ВОЛОС</a>
-            <a class="btn btn-dark text-uppercase dropdown-item border rounded-0 border-white" style="font-size: 1.2rem; background: #DCDCDC; padding: 9px;" href="/mega/nanoplastika">НАНОПЛАСТИКА</a>
+            <a class="btn btn-dark text-uppercase dropdown-item border rounded-0 border-white" style="font-size: 1.2rem; background: #DCDCDC; padding: 9px;" href="/mega/botox">БОТОКС ДЛЯ ВОЛОС</a>
+            <a class="btn btn-dark text-uppercase dropdown-item border rounded-0 border-white" style="font-size: 1.2rem; background: #DCDCDC; padding: 9px;" href="/mega/nanoplastics">НАНОПЛАСТИКА</a>
             <a class="btn btn-dark text-uppercase dropdown-item border rounded-0 border-white" style="font-size: 1.2rem; background: #DCDCDC; padding: 9px;" href="#">ШГО 1 ЭТАП</a>
             <a class="btn btn-dark text-uppercase dropdown-item border rounded-0 border-white" style="font-size: 1.2rem; background: #DCDCDC; padding: 9px;" href="#">МАСКИ 3 ЭТАП</a>
             <a class="btn btn-dark text-uppercase dropdown-item border rounded-0 border-white" style="font-size: 1.2rem; background: #DCDCDC; padding: 9px;" href="#">ИНСТРУМЕНТЫ</a>
@@ -190,7 +208,7 @@
             <div class="row col-clear shop-small-list border rounded-0 border-white" style="margin-left: 0.1rem; height: 90px; font-size: 0.9rem; background: #DCDCDC;">
               <div class="col-3"> <img title="Ботокс для волос NATUREZA NTOX Massa (для всех типов волос) 1000 ml" width="" height="70" alt="" src="/mega/resource/img/products/Ntox1000.jpg"></div>
               <div class="col">
-                <div> <a title=" Ботокс для волос NATUREZA NTOX Massa 1000 ml - Ботокс для волос NATUREZA NTOX Massa (для всех типов волос) 1000 ml" class="stip text-dark" href="">Ботокс для волос NATUREZA NTOX Massa 1000 ml</a> </div> 
+                <div> <a title=" Ботокс для волос NATUREZA NTOX Massa 1000 ml - Ботокс для волос NATUREZA NTOX Massa (для всех типов волос) 1000 ml" class="stip text-dark" href="http://gula612.beget.tech/mega/shop/4">Ботокс для волос NATUREZA NTOX Massa 1000 ml</a> </div> 
                 <div class="text-bold"><b>5.000,00 руб.</b><span class="sup">* <s>5.500,00 руб.</s></span></div>
               </div>
             </div>
@@ -198,7 +216,7 @@
             <div class="row col-clear shop-small-list border rounded-0 border-white" style="margin-left: 0.1rem; height: 90px; font-size: 0.9rem; background: #DCDCDC;">
               <div class="col-3"> <img title="Нанопластика VOGUE Orghanlux 1000 ml"  width="" height="70" alt="" src="/mega/resource/img/products/Vogue1000.jpg"> </div>
               <div class="col"> 
-                <div> <a title=" Нанопластика VOGUE Orghanlux 1000 ml - Нанопластика VOGUE Orghanlux 1000 ml" class="stip text-dark" href="">Нанопластика VOGUE Orghanlux 1000 ml</a> </div> 
+                <div> <a title=" Нанопластика VOGUE Orghanlux 1000 ml - Нанопластика VOGUE Orghanlux 1000 ml" class="stip text-dark" href="http://gula612.beget.tech/mega/shop/8">Нанопластика VOGUE Orghanlux 1000 ml</a> </div> 
                 <div class="text-bold"><b>6.000,00 руб.</b><span class="">* <s>8.500,00 руб.</s></span></div>
               </div>
             </div>
@@ -206,7 +224,7 @@
             <div class="row col-clear shop-small-list border rounded-0 border-white" style="margin-left: 0.1rem; height: 90px; font-size: 0.9rem; background: #DCDCDC;">
               <div class="col-3"> <img title="Ботокс для волос ZOOM BTX Diamond 1000 ml" width="" height="70" alt="" src="/mega/resource/img/products/b_zoom_1000.jpg"> </div>
               <div class="col">
-                <div> <a title=" Ботокс для волос ZOOM BTX Diamond 1000 ml - Ботокс для волос ZOOM BTX Diamond 1000 ml" class="stip text-dark" href=""> Ботокс для волос ZOOM BTX Diamond 1000 ml</a> </div>
+                <div> <a title=" Ботокс для волос ZOOM BTX Diamond 1000 ml - Ботокс для волос ZOOM BTX Diamond 1000 ml" class="stip text-dark" href="http://gula612.beget.tech/mega/shop/1"> Ботокс для волос ZOOM BTX Diamond 1000 ml</a> </div>
                 <div class="text-dark"><b>8.500,00 руб.</b><span class="sup">* <s></s></span></div>
               </div>
             </div>
@@ -232,9 +250,9 @@
     <?= $content ?>  
   
  
- 
 
-        
+   
+     
 
       
         
@@ -333,6 +351,9 @@
 
     <!-- Optional JavaScript -->
     <?= $scripts ?>
+    <script src=\"http://code.jquery.com/jquery-2.0.2.min.js\"></script>
+     <script src=\"/mega/resource/js/addBasket.js\"></script>
+
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>

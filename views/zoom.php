@@ -50,7 +50,7 @@ $content .= "
                   </a>  
                 </div>  
                 <div class=\"card-buy\">
-                   <a class=\"btn btn-white border border-dark text-dark\" style=\"width: 289px;\" href=\"/mega/basket/add/$product->id\">КУПИТЬ</a>
+                   <button class=\"addButton btn btn-white border border-dark text-dark\" style=\"width: 289px;\" productId=\"$product->id\">КУПИТЬ</button>
                 </div> 
               </div>              
                     
@@ -66,7 +66,30 @@ $content .= "
           </div>
         </div>
       </div>
-  
+      
+    <!-- всплывающее окно -->  
+      
+      <div class=\"b-popup\" id=\"popup1\">
+        <div class=\"b-popup-content text-center position-relative\" style=\"padding: 1px;\">
+          <div class=\"card container border rounded-0 border-white\" style=\"padding: 0%;\">
+            <div class=\"btn border border-secondary\" style=\"padding: 10px; padding-bottom: 10px;\">
+              <div class=\"card-body\" style=\"padding: 1px; margin-bottom: 1px;\">
+                <h5 class=\"font-weight-light\" >ТОВАР</h5>
+                <h5 class=\"card-title\" style=\"height: 90px; padding:1px;\">$product->name</h5>
+                <h5 class=\"font-weight-light\">добавлен в корзину</h5>
+              </div>
+              <div class=\"card-buy\">
+                 <a class=\"btn btn-white border rounded-0 border-dark text-dark\" style=\"width: 250px; margin-bottom: 5px;\" href=\"http://gula612.beget.tech/mega/basket\">ПЕРЕЙТИ В КОРЗИНУ</a>
+                 <a class=\"btn btn-dark border rounded-0 border-dark text-white\" style=\"width: 250px;\" href=\"javascript:PopUpHide()\">ПРОДОЛЖИТЬ ПОКУПКИ</a>
+              </div>
+            </div>
+          </div> 
+        </div>              
+      </div>
+   
 "; 
 
-$scripts = ""; 
+$scripts = "
+ <script src=\"http://gula612.beget.tech/mega/resource/js/addToBasket.js\"></script>
+ <script src=\"http://code.jquery.com/jquery-2.0.2.min.js\"></script>
+"; 
