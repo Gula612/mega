@@ -1,9 +1,5 @@
 "use strict"
-  
- // for (let quantity of document.querySelectorAll('.counter')) {}
-    
- 
-// файл для отладки 
+// работающий файл
 
 // отправка товара в корзину при клике
 let addButtons = document.querySelectorAll(".addButton");
@@ -14,8 +10,7 @@ for(let button of addButtons) {
 function addToBasket() {
   PopUpShow();
   let id = this.getAttribute("productId");
-  //FD
-  //fetch("/mega/basket/add/"+id, {POST})
+  
   fetch("/mega/basket/add/"+id)
      .then(response => response.text());
      //.then(result => alert(result));  // показывает, что в корзину добавлен товар
@@ -25,41 +20,10 @@ function addToBasket() {
 
 
 
-   // образец форм даты
-
- let form = document.querySelector('form');  // вызываем form из html 
-  form.onsubmit = send;       // вызываем функцию send на событие onsubmit в form
-  function send(event) {
-    event.preventDefault();                  // прерываем событие submit
-    let formData = new FormData(form);       // формируем данные для отправки
-    //console.log(formData.get('login') );
-    fetch('auth_obr.php', {                  // отправь данные методом POST 
-      method: "POST",
-      body: formData,                        // в виде данных formData
-    })  // реализация асинхронности в Js 
-      .then(response => response.text())     // затем прими ответ  и обработай его
-      //.then(result => console.log(result));  // затем выведи результат в консоль
-      .then(result => {                         
-        if(result == "ok") {                    // затем если результат ок
-          window.location.href = "lk.php";      // переходим в личный кабинет
-        } else {
-          let errorElem = document.querySelector('.error');  // если отрицательный результат, то
-          errorElem.classList.remove('d-none');
-          errorElem.innerHTML = result;
-        }  
-      }); 
-    //console.log("cvjhhgkjjb");
-  }
-
-
-
-
-
-
-
-
-
 // подсчет количества продукта
+// for (let quantity of document.querySelectorAll('.counter')) {}
+// foreach($products as $product) {
+
 
 let quantity = {
      counterElem: document.querySelector('.counter'), // span со счетчиком
@@ -88,7 +52,11 @@ let quantity = {
             
   function plus() {
     quantity.increaseCount();
+    console.log(quantity.count);
   }  
+    
+    
+    
     
    let minusButton = document.querySelector('.minus');
     
@@ -98,6 +66,7 @@ let quantity = {
             
   function minus() {
     quantity.decreaseCount();
+    console.log(quantity.count);
   }  
   
 

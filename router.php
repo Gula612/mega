@@ -96,9 +96,13 @@ if(!isset($path[2]) or $path[2] == "") {
      $controller->addProduct($path[4]);
      exit();
    } elseif($path[3] == "remove" && isset($path[4])) {
-     //echo "Удаление из корзины";
+     //echo "Удаление из корзины 1 элемента";
      $controller->removeProduct($path[4]);
      exit();
+   } elseif($path[3] == "clear") {
+     //echo "Очистка всей корзины";
+     $controller->clearBasket();
+     exit(); 
    } else {
      header("Location: /mega/basket");
    }

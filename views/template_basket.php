@@ -27,6 +27,24 @@
   /*  min-width: 800px; /* Минимальная ширина */
   /*  max-width: 1200px; /* Максимальная ширина */
   /* } */
+  .b-popup{
+    display: none;
+    width:100%;
+    min-height:100%;
+    background-color: rgba(0,0,0,0.5);
+    overflow:hidden;
+    position:fixed;
+    top:0px;
+  }
+  .b-popup .b-popup-content{
+    margin:180px auto 0px auto;
+    width:300px;
+    padding:10px;
+    background-color: #FFF;
+    border-radius:0px;
+    box-shadow: 0px 0px 10px #000;
+  }
+
    .sidebar { /* Левая колонка главной части */
     width: 84mm; /* Ширина левой колонки */
     margin-left: 0;
@@ -258,6 +276,9 @@
 
     <!-- Optional JavaScript -->
     <?= $scripts ?>
+    <script src=\"http://gula612.beget.tech/mega/resource/js/basket.js\"></script>
+    <script src=\"http://code.jquery.com/jquery-2.0.2.min.js\"></script>
+
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>

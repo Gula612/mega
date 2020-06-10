@@ -1,6 +1,5 @@
 <?
 class BasketController {
-  
   public function index() {  // будет отображаться сама корзина
     require_once('../mega/models/Product.php');
     session_start();
@@ -17,7 +16,7 @@ class BasketController {
   public function addProduct($id) {  // будет отображаться добавление в корзину
     require_once('../mega/models/Product.php');
     $product = Product::getById($id);
-    if( !isset($product) ) exit("Товара нет в наличии");
+    //if( !isset($product) ) exit("Товара нет в наличии");
     session_start();
     $_SESSION['basket'][] = $product;
     exit("Товар добавлен в корзину");
@@ -26,9 +25,22 @@ class BasketController {
   public function removeProduct($index) {  // будет отображаться удаление из корзины
     require_once('../mega/models/Product.php');
     session_start();
-    array_splice($_SESSION['basket'], $index, 1); // удалить сессию ['cart'][$index] 
+    array_splice($_SESSION['basket'], $index, 1); // удалить сессию ['basket'], [$index], 1 элемент 
     header("Location: /mega/basket");
   }
   
+  public function clearBasket() {  // будет отображаться полная очистка корзины
+    require_once('../mega/models/Product.php');
+    session_start();
+    if(!isset($_SESSION['basket']) or count($_SESSION['basket']) == 0) { //если ничего в корзине нет,показывай пустую корзину 
+      require_once('../mega/views/emptyBasket.php');
+    } else {
+      $products = $_SESSION['basket'];
+      //unset($_SESSION['basket']);   //  удаление переменных из сессии
+      session_destroy();   // закрытие сессии
+      require_once('../mega/views/emptyBasket.php');
+    }
+    require_once('../mega/views/template_basket.php'); // сборка всех файлов показов
+  }
+  
 }
-

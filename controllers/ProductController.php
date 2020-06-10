@@ -61,7 +61,7 @@ class ProductController {
     require_once('../mega/models/Product.php');
     $product = Product::getById($id);
     if(isset($product)) {
-      setcookie("lastProduct", $product->id, time() + 60*60*24*7, "/");  // запись в куки (название, значение, время жизни неделя в секундах, /-означает что кука видна везде по всему сайту если без/ то только в продуктах)
+      //setcookie("lastProduct", $product->id, time() + 60*60*24*7, "/");  // запись в куки (название, значение, время жизни неделя в секундах, /-означает что кука видна везде по всему сайту если без/ то только в продуктах)
       require_once('../mega/views/productPage.php');
     } else {
       require_once('../mega/views/product404.php'); 

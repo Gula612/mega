@@ -16,9 +16,9 @@ $content = "
             <h2 class=\"col-md-12 box-title\" align=\"center\">КОРЗИНА ПОКУПОК</h2>
             <div class=\"col-md-12 bg-white\" style=\"height: 10px\"></div>
             <div class=\"col-md-12\" align=\"center\">
-
-              <button class=\"showCloseButton btn btn-white border rounded-0  border-white text-dark\" style=\"width: 240px; height: 35px; margin: 5px; font-size: 14pt;\">&times; Очистить корзину</button>
-               
+              <button type=\"button\" class=\"close\" aria-label=\"Close\">
+                <span aria-hidden=\"true\">&times;<span style=\"font-size: 14pt;\">Очистить корзину</span></span>
+              </button>
             </div>  
             <div class=\"col-md-12 bg-white\" style=\"height: 20px\"></div>
             <div class=\"col-md-12 bg-light\" style=\"height: 30px\"></div>
@@ -54,10 +54,15 @@ for($i = 0; $i < count($products); $i++) {
               </a>
             </div>              
             
+
+
   ";
 }
 
 $content .= "      
+            
+            
+            
             
             <!-- белая полоса -->
             <div class=\"col-md-12 bg-white\" style=\"height: 10px\"></div>
@@ -65,31 +70,8 @@ $content .= "
           </div>
         </div>
       </div>
-      
-        <!-- всплывающее окно -->  
-      
-      <div class=\"b-popup\" id=\"popup1\">
-        <div class=\"b-popup-content text-center position-relative\" style=\"padding: 1px;\">
-          <div class=\"card container border rounded-0 border-white\" style=\"padding: 0%;\">
-            <div class=\"btn border border-secondary\" style=\"padding: 10px; padding-bottom: 10px;\">
-              <div class=\"card-body\" style=\"padding: 1px; margin-bottom: 1px;\">
-                <h5 class=\"card-title\" style=\"height: 90px; padding:1px;\">ВЫ ДЕЙСТВИТЕЛЬНО ХОТИТЕ ОЧИСТИТЬ КОРЗИНУ</h5>
-              </div>
-              <div class=\"card-buy\">
-                 <a class=\"btn btn-white border rounded-0 border-dark text-dark\" style=\"width: 250px; margin-bottom: 5px;\" href=\"http://gula612.beget.tech/mega/basket\">НЕТ. ПЕРЕЙТИ В КОРЗИНУ</a>
-                 <button class=\"closeButton btn btn-danger border rounded-0 border-danger text-white\" style=\"width: 250px;\"><a href=\"http://gula612.beget.tech/mega/basket/clear\">ДА. ОЧИСТИТЬ КОРЗИНУ</a></button>
-              </div>
-            </div>
-          </div> 
-        </div>              
-      </div>
-   
-  
-"; 
-  
 
-$scripts = "
-<script src=\"http://gula612.beget.tech/mega/resource/js/basket.js\"></script>
-<script src=\"http://code.jquery.com/jquery-2.0.2.min.js\"></script>
 
-"; 
+"; // это </div> от .row  и от  .container
+
+$scripts = "<script src=\"/mega/resource/js/basket.js\"></script>"; // оставляем пустым, просто, чтоб не ругалась, что переменная не объявлена

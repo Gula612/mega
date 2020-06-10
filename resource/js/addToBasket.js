@@ -7,23 +7,32 @@ for(let button of addButtons) {
   button.onclick = addToBasket;
 }
 
+
 function addToBasket() {
   PopUpShow();
   let id = this.getAttribute("productId");
-  
   fetch("/mega/basket/add/"+id)
      .then(response => response.text());
      //.then(result => alert(result));  // показывает, что в корзину добавлен товар
 }
 
-
-
-
-
-
-
-
-
+/*
+function addToBasket() {
+  //PopUpShow();
+  let id = this.getAttribute("productId");
+  let quantityId = quantity.count;
+  //console.log(quantityId);
+  let formData = new FormData(); 
+  formData.append('quantity', quantityId);
+  //console.log(formData);
+  fetch("/mega/basket/add/"+id, {                  
+      method: "POST",                       // отправь данные методом POST 
+      body: formData,                        // в виде данных formData
+    })                                         // реализация асинхронности в Js 
+     .then(response => response.text())
+     .then(result => alert(result));  // показывает, что в корзину добавлен товар
+}
+*/
 
 
 
@@ -59,7 +68,7 @@ let quantity = {
             
   function plus() {
     quantity.increaseCount();
-    console.log(quantity.count);
+    
   }  
     
     

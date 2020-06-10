@@ -10,7 +10,7 @@ $content = "
           <div class=\"wrapper\" style=\"margin: 20px 20px 0px; padding-bottom: 1px;\">
             <div class=\"bg-white\" style=\"height: 10px\"></div>
             <h3 class=\"box-title\" align=\"center\">СОГЛАШЕНИЕ ОБ ИСПОЛЬЗОВАНИИ ФАЙЛОВ COOKIE</h3>
-            <div class=\"clearfix\" style=\"margin-left: 330px; margin-right: 20px; margin-bottom: 0px;  padding-bottom: 1px;\">
+            <div class=\"\" style=\" margin-right: 20px; margin-bottom: 0px;  padding-bottom: 1px;\">
               <div class=\"bg-white\" style=\"height: 20px\"></div>
               <p align=\"justify\">Веб-сайт mega-keratin.ru, языковые версии которого, размещены в сети Интернет по адресу www.mega-keratin.ru (далее — Веб-сайт) использует файлы cookies и схожие технологии, чтобы отличать Вас от других пользователей (далее — Пользователи) нашего Веб-сайта, гарантировать максимальное удобство, предоставляя персонализированную информацию, а также, чтобы улучшить наш сервис.</p>
               <div class=\"bg-white\" style=\"height: 3px\"></div>

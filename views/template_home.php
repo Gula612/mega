@@ -232,7 +232,7 @@
    .training-box { /* блок с обучением внутри картинки */
     position: relative;
     transform: translateX(-50%);
-    top: -220px; /* Сдвигаем текст вверх */
+    top: -200px; /* Сдвигаем текст вверх */
     left: 50%; /* Сдвигаем текст влево */
     padding: 1px;
     z-index: 4;
@@ -265,7 +265,7 @@
           <div class="training col-12 row">
             <img src="/mega/resource/img/training.jpg" class="d-block w-100" alt="Пройди обучение в нашем тренинг-центре или в формате Online"> 
             <div class="training-box col-3 row justify-content-center"> 
-              <a class="training-info btn rounded-0 text-center" href="/mega/training"> Обучение в нашем тренинг-центре или в формате Online </a> 
+              <a class="training-info btn rounded-0 text-center"  href="/mega/training"> Обучение в нашем центре или в формате Online </a> 
               <a class="training-link btn border rounded-0 border-white text-white" href="/mega/training"> ПОДРОБНЕЕ </a> 
             </div> 
           </div> 

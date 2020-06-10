@@ -47,14 +47,6 @@ class Product {
     }
     return null;
   }
-  
-  public static function getByIdBrand($id_brand) {
-    global $mysqli;
-    $result = $mysqli->query("SELECT * FROM `mega` WHERE `id_brand`='$id_brand'") ->fetch_assoc();
-    if(isset($result)) {
-      return new Product($result['id'], $result['id_brand'], $result['id_name'], $result['id_prob'], $result['article'], $result['name'], $result['price'], $result['old_price'], $result['description'], $result['image']);
-    }
-    return null;
-  }
+
   
 }
